@@ -10,7 +10,8 @@ env:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    # We use 20.04 so we build with glibc 2.31 to support debian bullseye
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v3
